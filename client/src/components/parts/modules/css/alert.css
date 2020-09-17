@@ -1,0 +1,46 @@
+.alert {
+    position: absolute;
+    top: 75px;
+    text-align: left !important;
+    min-width: 20%;
+    padding: 10px 15px;
+    height: 60px;
+    border-radius: 5px;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 99999;
+
+    font-family: robotomedium;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.alert img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.alert-success {
+    color: rgb(30, 70, 32);
+    background-color: rgb(237, 247, 237);
+}
+
+.alert-fail {
+    color: rgb(97, 26, 21) !important;
+    background-color: rgb(253, 236, 234);
+}
+
+.alertFadeIn {
+    animation: alertFadeIn 0.5s both;
+}
+
+@keyframes alertFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(150px);
+    }
+}

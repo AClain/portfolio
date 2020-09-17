@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #222831;
+}
+
+#home {
+    height: 100vh;
+}
+
+.alignCenter {
+    text-align: center!important;
+}
+
+.title {
+    font-family: robotolight;
+    font-size: 96px;
+    line-height: 112px;
+    font-weight: 300;
+    color: #f6f6f6;
+}
+
+.title-strong {
+    font-family: robotomedium;
+    font-size: 40px;
+    font-weight: 500;
+    color: #f6f6f6;
+    padding: 1vh 15vw;
+    border: solid 2px #f6f6f6;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: robotothin;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 56px;
+    color: #f6f6f6;
+}
+
+.divider {
+    border: solid 1px #f6f6f6;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .sub-title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title-strong {
+        font-size: 24px;
+    }
+}

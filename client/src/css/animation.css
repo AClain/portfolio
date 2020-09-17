@@ -1,0 +1,294 @@
+.underline-anim {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-anim::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3px;
+  width: 0%;
+  transition: 0.3s;
+  animation: underline 0.5s both 0.7s;
+}
+
+@keyframes underline {
+  from {
+    width: 0%;
+    background-color: transparent;
+  }
+  to {
+    width: 75%;
+    background-color: #ff2244;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .underline-anim::after {
+    bottom: -5px;
+  }
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 0.5s ease-in;
+}
+
+/* fadeOut */
+
+.fadeOut {
+  animation: fadeOut 0.7s both;
+}
+
+.fadeOutTop {
+  animation: fadeOutTop 0.7s both;
+}
+
+.fadeOutBottom {
+  animation: fadeOutBottom 0.7s both;
+}
+
+.fadeOutRight {
+  animation: fadeOutRight 0.7s both;
+}
+
+.fadeOutLeft {
+  animation: fadeOutLeft 0.7s both;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutTop {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes fadeOutBottom {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+/* fadeIn */
+
+.fadeIn {
+  animation: fadeIn 0.7s both;
+}
+
+.fadeInTop {
+  animation: fadeInTop 0.7s both;
+}
+
+.fadeInBottom {
+  animation: fadeInBottom 0.7s both;
+}
+
+.fadeInRight {
+  animation: fadeInRight 0.7s both;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 0.7s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* With delay */
+
+.fadeInFirst {
+  animation: fadeInFirst 0.3s both;
+}
+
+@keyframes fadeInFirst {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInSecond {
+  animation: fadeInSecond 0.3s both 0.3s;
+}
+
+@keyframes fadeInSecond {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInThird {
+  animation: fadeInThird 0.3s both 0.6s;
+}
+
+@keyframes fadeInThird {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInFourth {
+  animation: fadeInFourth 0.3s both 0.9s;
+}
+
+@keyframes fadeInFourth {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInFith {
+  animation: fadeInFith 0.3s both 1.2s;
+}
+
+@keyframes fadeInFith {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInSixth {
+  animation: fadeInFith 0.3s both 1.5s;
+}
+
+@keyframes fadeInSixth {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

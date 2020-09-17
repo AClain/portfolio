@@ -1,0 +1,86 @@
+header {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100vw;
+  padding: 15px 15px;
+  background-color: #222831;
+  border-bottom: solid 5px #ff2244;
+  z-index: 9999;
+}
+
+#header-pro-links {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.header-pro-link {
+  height: auto;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-pro-link:hover img {
+  filter: brightness(1);
+}
+
+.header-pro-link img {
+  height: 45px;
+  width: 45px;
+  filter: brightness(0.6);
+  transition: 0.2s;
+}
+
+.header-link-container {
+  text-align: right;
+}
+
+#header-links {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.header-link {
+  position: relative;
+  color: #f6f6f6;
+  font-family: robotoblack;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.header-link:hover::after {
+  width: 45%;
+  background-color: #f6f6f6;
+}
+
+.header-link-active {
+  color: #ff2244;
+}
+
+.header-link-active::after {
+  width: 45%;
+  background-color: #f6f6f6;
+}
+
+.header-link:hover {
+  color: #ff2244;
+}

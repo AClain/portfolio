@@ -1,0 +1,131 @@
+#contact-container {
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.title-contact {
+  margin-top: 25px;
+  font-family: robotoblack;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #222831;
+  text-transform: uppercase;
+}
+
+.contact-link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.contact-link:last-child {
+  margin-bottom: 0px;
+}
+
+.img-fluid {
+  height: 25px;
+  margin-right: 25px;
+}
+
+#contact-links {
+  background-color: transparent;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+
+#contact-links .title-contact {
+  color: #f6f6f6;
+}
+
+#contact-form {
+  background-color: #f6f6f6;
+  overflow-y: auto;
+}
+
+#contact-form,
+#contact-links {
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 80%;
+}
+
+#contact-links .contact-link {
+  text-align: left;
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 0px 100px;
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 2px #222831;
+  color: #222831;
+  transition: 0.3s;
+}
+
+.textarea-input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  border: solid 2px #222831;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #222831;
+  overflow-y: auto;
+}
+
+.error-input {
+  border-color: #ff2244;
+}
+
+.error {
+  color: #ff0026;
+  text-align: center;
+  display: block;
+  font-family: robotomedium;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  #contact-container {
+    overflow-y: auto;
+  }
+  #contact-form {
+    height: max-content;
+    padding-bottom: 50px;
+  }
+  #contact-links {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 5vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .input-container {
+    padding: 0px 50px;
+  }
+}
