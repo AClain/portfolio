@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Error when loading [alexandre-clain.fr](http://alexandre-clain.fr/), React Router DOM not supported by web hoster.
 
 ## Available Scripts
 
